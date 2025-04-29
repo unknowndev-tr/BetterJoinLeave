@@ -26,7 +26,7 @@ public final class Main extends JavaPlugin {
         Bukkit.getConsoleSender().sendMessage(ChatColor.translateAlternateColorCodes('&', "&b  |___/\\___|\\__|\\__\\___|_|  \\__/|____|"));
         Bukkit.getConsoleSender().sendMessage(ChatColor.translateAlternateColorCodes('&', "                                     "));
         Bukkit.getConsoleSender().sendMessage(ChatColor.translateAlternateColorCodes('&', " &8● &7Author: &fUnknownDev"));
-        Bukkit.getConsoleSender().sendMessage(ChatColor.translateAlternateColorCodes('&', " &8● &7Version: &f1.0.4-fix"));
+        Bukkit.getConsoleSender().sendMessage(ChatColor.translateAlternateColorCodes('&', " &8● &7Version: &f1.1.0"));
         Bukkit.getConsoleSender().sendMessage(ChatColor.translateAlternateColorCodes('&', ""));
         Bukkit.getConsoleSender().sendMessage(ChatColor.translateAlternateColorCodes('&', " &8● &7Discord: &9Unknown (@unknownstoretr)"));
         Bukkit.getConsoleSender().sendMessage(ChatColor.translateAlternateColorCodes('&', ""));
