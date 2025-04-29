@@ -1,0 +1,114 @@
+#  ___      _   _              _ _
+# | _ ) ___| |_| |_ ___ _ _ _ | | |     -> Author: UnknownDev
+# | _ \/ -_)  _|  _/ -_) '_| || | |__   -> Version Date: 14.12.2024
+# |___/\___|\__|\__\___|_|  \__/|____|
+#
+# If you have any questions, you can reach
+# me via Discord: Unknown (@unknownstoretr)
+Config-Version: 1.1.0
+
+# It comes before the plugin messages.
+# Leave it empty to disable.
+Prefix: "&8(( &b&lʙᴇᴛᴛᴇʀᴊʟ &8)) &8→ &r"
+
+# It is a system that records the players' joins
+# and quits in the finest detail.
+Server-Logs:
+  enabled: true # Change it to 'false' to disable.
+  file-path: "logs" # The name of the folder where the logs will be kept.
+  latest-log-name: "latest.log" # Name of the last log file.
+
+# Sends a join and leave notification to the Discord
+# channel when a player joins the game.
+Discord-Webhook:
+  enabled: true # Change it to 'false' to disable.
+  # Enter the Webhook URL you created here.
+  # If you don't know how to do this,
+  # there are many videos available online.
+  webhookURL: "YOUR_WEBHOOK_URL"
+  # You can customize the messages sent
+  # on Discord when a player joins the game here.
+  #
+  # %username% -> Represents the player’s name.
+  joinMessages:
+    title: "- Join Notification -"
+    description: "**%username%** has joined the game!"
+    footer: "BetterJoinLeave - By UnknownDev"
+  # You can customize the messages sent
+  # on Discord when a player leaves the game here.
+  #
+  # %username% -> Represents the player’s name.
+  leaveMessages:
+    title: "- Leave Notification -"
+    description: "**%username%** has left the game!"
+    footer: "BetterJoinLeave - By UnknownDev"
+
+
+# Toggles the visibility of join and leave messages.
+JL-Messages-Enabled: true # Change it to 'false' to disable.
+
+# When a player join the game, will launch fireworks.
+Firework-On-Join: true # Change it to 'false' to disable.
+
+# If a player has the 'betterjoinleave.silentjoin' permission,
+# other players will not see their join and leave messages.
+Silent-Join-For-Admins: true # Change it to 'false' to disable.
+
+# You can set the sound effect that plays when a player joins the game here.
+Join-Sound:
+  enabled: true # Change it to 'false' to disable.
+  sound: "ENTITY_PLAYER_LEVELUP" # Minecraft sound codes: https://www.spigotmc.org/wiki/cc-sounds-list/ (use the ones labeled 1.9+.)
+
+# If you want the player to automatically execute a command when they join the game, use this.
+Join-Command:
+  enabled: true # Change it to 'false' to disable.
+  commands:
+  - "say Hello, I am here!" # Do not use '/' or '%' when setting the command.
+
+# You can edit the join and leave messages, the main feature of the plugin, here.
+Formats:
+  joinMessage: "&a&l→ &f%player_name% &7has joined the game!"
+  firstJoinMessage: "&a&l→ &f%player_name% &7has joined the game for the first time, welcome!"
+  leaveMessage: "&c&l← &f%player_name% &7has left the game!"
+
+# In addition to chat, you can also send messages in the ActionBar section for players.
+Action-Bar:
+  enabled: true # Change it to 'false' to disable.
+  joinMessage: "&a&l[+] &f%player_name% &7has joined the game! &a&l[+]"
+  firstJoinMessage: "&a&l[+] &f%player_name% &7has joined the game for the first time, welcome! &a&l[+]"
+  leaveMessage: "&c&l[-] &f%player_name% &7has left the game! &c&l[-]"
+
+# Sets the welcome message that will appear on the screen when the player joins the game.
+Send-Title-To-Player:
+  enabled: true # Change it to 'false' to disable.
+  titleText: "&b&l- BetterJoinLeave -"
+  subtitleText: "&f&oWelcome to the server &e%player_name%&f&o, have a great time!"
+
+# Sets the welcome message that will appear in chat when the player joins the game.
+Send-Message-To-Player:
+  enabled: true # Change it to 'false' to disable.
+  welcomeText:
+    - ""
+    - "       &b&lBetterJoinLeave &8- &fBy UnknownDev"
+    - "  &7&oWelcome to the server %player_name%, have a great time!"
+    - ""
+    - " &8• &7Discord: &9discord.gg/server"
+    - " &8• &7Website: &ewww.server.com"
+    - " &8• &7Contact: &acontact@server.com"
+    - ""
+
+# You can edit all the plugin messages here.
+Messages:
+  wrongUsage: "&cInvalid command, type &4/betterjl help &cfor help."
+  noPermission: "&cYou do not have permission for this."
+  onlyConsole: "&cThis command can only be used from the game."
+  pluginReloaded: "&aPlugin files have been reloaded from start to finish."
+  # If the player has the 'betterjoinleave.admin' permission
+  # they will see these messages.
+  helpCommand:
+    - ""
+    - "          &8(( &b&lBetterJL &8| &fBy UnknownDev &8))"
+    - ""
+    - " &8-> &3/betterjl reload: &7Reloads plugin files."
+    - " &8-> &3/betterjl help: &7Shows help commands."
+    - ""
